@@ -9,13 +9,19 @@ h1{
     text-align: center;
 }
 
+@keyframes gridanimation {
+    from { background-color: bisque;}
+    to {background-color: cadetblue;}
+    
+}
+
+
 
 .grid-container {
     display: grid;
     grid-template-areas:
     'header1 header2 header3'
     'space1 form space2';
-    
     
 }
 
@@ -48,10 +54,12 @@ h1{
     background-color: bisque;
     color: rgb(0, 0, 0);
     padding: 0.5vw;
-    margin: 3ch;
+    margin: 3ch; 
     font-size: 1.5vw;
     text-align: center;
 }
+
+
 
 .form {
     grid-area: form;
@@ -60,8 +68,12 @@ h1{
     font-size: 1.1vw;
     background-color: bisque;
     text-align: center;
+    animation-name: gridanimation;
+    animation-duration: 4s ;
 
 }
+
+
 
 h2 {
 
