@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" type="text/css"  href="public/stylesheets/CV.css">
+    <script src="public/javascripts/CV.js"></script>
+    
+</head>
+<body onload="changeHeader()">
+    <h1 id="header">Itay Noy</h1>
+    <div class="grid-container">
+        <div class="Aducation"> <a> Myself </a> </div>
+        <div class="Work_Experience">Work Expirience</div>
+        <div class="About_Myself"> <a href="http://localhost:8080/companies"> Companies</a></div>
+        <div class="form">
+            <h2>Contact Me!</h2><br>
+            <form action="http://localhost:8080/cv" method="POST">
+                <label for="fname">Company name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="lname">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="cname">phone</label><br>
+                <input type="text" id="phone" name="phone"><br><br>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+
+        
+                <input type="checkbox" id="job" name="job" value="data">
+                <label for="vehicle1"> Data Analyst</label><br>
+                <input type="checkbox" id="job" name="job" value="product">
+                <label for="vehicle2"> Product Manager</label><br>
+        
+                <input type="submit" value="Submit">
+    
+              </form>
+
+        </div>
+        <div class="sapce1"></div>
+        <div class="sapce2"></div>
+
+
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    background-image: url(../images/wallpaperr.jpg);
+    background-size: cover;
+}
+
+h1{
+    color: rgb(194, 189, 184);
+    font-size: 5vw;
+    text-align: center;
+}
+
+@keyframes gridanimation {
+    from { background-color: bisque;}
+    to {background-color: cadetblue;}
+    
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header1 header2 header3'
+    'space1 form space2';
+    
+}
+
+.Aducation{
+    grid-area: header1;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    padding: 0.5vw;
+    margin: 3ch;
+    font-size: 1.5vw;
+    text-align: center;
+
+
+}
+
+.Work_Experience {
+    grid-area: header2;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    padding: 0.5vw;
+    margin: 3ch;
+    font-size: 1.5vw;
+    text-align: center;
+
+}
+
+
+.About_Myself{
+    grid-area: header3;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    padding: 0.5vw;
+    margin: 3ch; 
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+
+.form {
+    grid-area: form;
+    padding: 2vw;
+    margin: 8ch;
+    font-size: 1.1vw;
+    background-color: bisque;
+    text-align: center;
+    animation-name: gridanimation;
+    animation-duration: 4s ;
+
+}
+
+
+
+h2 {
+
+    font-size: 2vw;
+    text-align: center;
+
+}
+
+.space1 {
+
+}
+
+.space2 {
+
+}
+
+
+
